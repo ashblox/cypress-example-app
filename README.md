@@ -2,6 +2,8 @@
 
 ## Description
 
+This repository was created to help the Cypress team resolve an [issue](https://github.com/cypress-io/cypress/issues/18401) I created.
+
 Cypress allows you to "includeShadowDom" at a global level (in your `cypress.json`) but also [doesn't retry all commands in a chain](https://docs.cypress.io/guides/core-concepts/retry-ability#Only-the-last-command-is-retried). The suggested workaround is to use a combined query, but this doesn't work with shadow dom nesting.
 
 ## Development server

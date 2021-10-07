@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cypress-example-app": {
+    "shadow-dom-problem": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cypress-example-app",
+            "outputPath": "dist/shadow-dom-problem",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cypress-example-app:build"
+            "browserTarget": "shadow-dom-problem:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cypress-example-app:build:production"
+              "browserTarget": "shadow-dom-problem:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cypress-example-app:build"
+            "browserTarget": "shadow-dom-problem:build"
           }
         },
         "test": {
@@ -111,7 +111,7 @@
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "cypress-example-app:serve",
+            "devServerTarget": "shadow-dom-problem:serve",
             "watch": true,
             "headless": false,
             "browser": "chrome"
@@ -126,5 +126,5 @@
       }
     }
   },
-  "defaultProject": "cypress-example-app"
+  "defaultProject": "shadow-dom-problem"
 }
